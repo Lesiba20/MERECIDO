@@ -30,9 +30,13 @@ This project is configured as a Render static site in `render.yaml`.
 3. Alternatively, choose **New > Static Site** and use:
    - **Build command:** `npm install && npm run build`
    - **Publish directory:** `dist`
+   - **Start command:** leave blank (Render static sites do not use a start command)
+   - **Root directory:** leave blank when the project files are at the repository root
 4. When the deploy finishes, open the `onrender.com` URL shown in the service dashboard. Add a custom domain from the service settings if you have one.
 
 The app uses hash-based navigation (for example, `/#/shop`), so page views work on the static host without server-side routing rules. No environment variables or backend service are needed for this demo.
+
+Render can only deploy after these project files have been pushed to a Git repository that you can connect in Render.
 
 ## Project files
 
