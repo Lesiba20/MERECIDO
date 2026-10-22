@@ -183,7 +183,7 @@ function homePage() {
       <section class="hero">
         ${image(
           IMAGES.hero,
-          "Original MERECIDO illustration of a figure against a warm city skyline",
+          "Streetwear campaign portrait against an urban backdrop",
           "hero-image"
         )}
         <div class="hero-shade"></div>
@@ -226,7 +226,7 @@ function homePage() {
           <div><p class="eyebrow">A FEW FAVOURITES</p><h2>MADE TO MOVE.</h2></div>
           <a class="text-link" href="#/shop">SHOP THE COLLECTION <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="demo-note">Sample products and prices shown for demonstration; these are original MERECIDO illustrations.</p>
+        <p class="demo-note">Sample products and prices shown for demonstration; product and campaign photography is temporary.</p>
         <div class="product-grid">${productGrid(featured)}</div>
       </section>
 
@@ -245,11 +245,11 @@ function homePage() {
         <div class="lookbook-teaser">
           ${image(
             IMAGES.lookbookPreview,
-            "Original MERECIDO illustrated editorial portrait"
+            "Streetwear editorial portrait in an urban setting"
           )}
           ${image(
             IMAGES.lookbookPreviewSecondary,
-            "Original MERECIDO illustrated graphic tee artwork"
+            "Urban fashion editorial on a city street"
           )}
           <a class="lookbook-callout" href="#/lookbook">
             <span class="eyebrow">VOLUME 01 / GAUTENG</span>
@@ -358,7 +358,7 @@ function aboutPage() {
       <section class="about-layout">
         ${image(
           IMAGES.about,
-          "Original MERECIDO illustration of a person in a burgundy outfit"
+          "Streetwear editorial portrait reflecting independent style"
         )}
         <div class="about-copy">
           <p>MERECIDO means “deserved” — a reminder that you deserve clothes that feel as good as they look.</p>
@@ -391,7 +391,7 @@ function lookbookPage() {
           )
           .join("")}
       </section>
-      <p class="demo-note">These original MERECIDO vector illustrations are visual mockups, not photographs of finished products.</p>
+      <p class="demo-note">Editorial imagery is temporary remote photography and can be replaced with original campaign assets.</p>
     </main>
   `;
 }
