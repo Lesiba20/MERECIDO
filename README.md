@@ -27,7 +27,7 @@ To check the production build, run `npm run build`. To preview that build locall
 
 - **Brand text and page copy:** edit `src/main.js`.
 - **Products, prices, sizes, colours, and categories:** edit the `PRODUCTS` and `CATEGORIES` lists in `src/products.js`. Prices are in South African rand.
-- **Colours and typography:** edit the variables at the top of `src/style.css`.
+- **Colours and typography:** edit the variables at the top of `src/style.css`. The palette uses charcoal grey, rich burgundy, deep green, burnt orange, and deep gold.
 - **Product and campaign images:** change the URLs and alt text in `src/images.js`. The current photos are temporary Unsplash images; replace them with your own approved product photographs. You can put image files in a `public/images` folder and point the matching image entry to its file, for example `"/images/my-product.jpg"`.
 - **Browser cart:** the cart is saved in your browser's local storage for this demo.
 

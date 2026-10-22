@@ -1,10 +1,18 @@
 :root {
   color-scheme: dark;
-  --obsidian: #090909;
+  --charcoal-grey: #292826;
+  --charcoal-deep: #1c1b1a;
+  --charcoal-mid: #393735;
+  --rich-burgundy: #76263c;
+  --deep-green: #183e32;
+  --burnt-orange: #a84326;
+  --burnt-orange-highlight: #e19a79;
+  --deep-gold: #80601c;
+  --gold-highlight: #d8b25e;
+  --obsidian: var(--charcoal-grey);
   --off-white: #f5f3ef;
-  --burgundy: #793c37;
-  --deep-blue: #3f5148;
-  --concrete: #b9ad9e;
+  --burgundy: var(--rich-burgundy);
+  --concrete: var(--gold-highlight);
   --muted: #c2beb7;
   --line: rgba(245, 243, 239, 0.2);
   --font-heading: "Space Grotesk", sans-serif;
@@ -65,7 +73,7 @@ img {
 }
 
 :focus-visible {
-  outline: 2px solid var(--off-white);
+  outline: 2px solid var(--gold-highlight);
   outline-offset: 4px;
 }
 
@@ -217,7 +225,7 @@ img {
   align-items: center;
   overflow: hidden;
   padding: 7rem 9vw;
-  background: #242322;
+  background: var(--charcoal-grey);
 }
 
 .hero-image,
@@ -234,7 +242,7 @@ img {
 }
 
 .hero-shade {
-  background: linear-gradient(90deg, rgba(9, 9, 9, 0.88), rgba(9, 9, 9, 0.44) 53%, rgba(9, 9, 9, 0.1));
+  background: linear-gradient(90deg, rgba(28, 27, 26, 0.88), rgba(28, 27, 26, 0.44) 53%, rgba(28, 27, 26, 0.1));
 }
 
 .hero-content {
@@ -350,7 +358,7 @@ h3 {
 
 .button:disabled {
   cursor: not-allowed;
-  background: #393836;
+  background: var(--charcoal-mid);
   color: var(--muted);
 }
 
@@ -433,7 +441,7 @@ h3 {
   position: absolute;
   z-index: 1;
   inset: 0;
-  background: linear-gradient(0deg, rgba(9, 9, 9, 0.82), rgba(9, 9, 9, 0.04) 80%);
+  background: linear-gradient(0deg, rgba(28, 27, 26, 0.82), rgba(28, 27, 26, 0.04) 80%);
   content: "";
   transition: background-color 180ms ease;
 }
@@ -453,7 +461,7 @@ h3 {
 }
 
 .category-tile:hover::before {
-  background-color: rgba(114, 47, 62, 0.2);
+  background-color: color-mix(in srgb, var(--burnt-orange) 22%, transparent);
 }
 
 .category-tile > span {
@@ -510,7 +518,7 @@ h3 {
   position: relative;
   display: block;
   overflow: hidden;
-  background: #1d1c1b;
+  background: var(--charcoal-deep);
 }
 
 .product-image {
@@ -529,7 +537,7 @@ h3 {
   right: 0.75rem;
   bottom: 0.75rem;
   padding: 0.4rem 0.55rem;
-  background: var(--obsidian);
+  background: var(--deep-gold);
   font-size: 8px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -625,7 +633,7 @@ h3 {
   position: absolute;
   right: 4vw;
   bottom: -0.28em;
-  color: rgba(9, 9, 9, 0.13);
+  color: rgba(28, 27, 26, 0.3);
   font-family: var(--font-heading);
   font-size: clamp(10rem, 29vw, 36rem);
   font-weight: 700;
@@ -657,7 +665,7 @@ h3 {
   align-items: flex-start;
   justify-content: space-between;
   padding: 2rem;
-  background: var(--deep-blue);
+  background: var(--deep-green);
 }
 
 .lookbook-callout > span:nth-child(2) {
@@ -805,7 +813,7 @@ h3 {
   margin-bottom: 2rem;
   padding: 0.8rem 1rem;
   border-left: 2px solid var(--burgundy);
-  background: #171615;
+  background: var(--charcoal-deep);
   color: var(--muted);
   font-size: 9px;
   font-weight: 700;
@@ -834,7 +842,7 @@ h3 {
   padding: 0.75rem;
   border: 1px solid var(--line);
   border-radius: 0;
-  background: #111110;
+  background: var(--charcoal-deep);
   color: var(--off-white);
 }
 
@@ -885,7 +893,7 @@ h3 {
 }
 
 .product-detail-image {
-  background: #1d1c1b;
+  background: var(--charcoal-deep);
 }
 
 .product-detail-image img {
@@ -997,7 +1005,7 @@ h3 {
   grid-column: span 2;
   margin: 0;
   overflow: hidden;
-  background: #1d1c1b;
+  background: var(--charcoal-deep);
 }
 
 .lookbook-frame-1,
@@ -1032,7 +1040,7 @@ h3 {
   bottom: 0;
   left: 0;
   padding: 2rem 0.8rem 0.6rem;
-  background: linear-gradient(transparent, rgba(9, 9, 9, 0.7));
+  background: linear-gradient(transparent, rgba(28, 27, 26, 0.7));
   font-size: 8px;
   letter-spacing: 0.1em;
 }
@@ -1068,7 +1076,7 @@ h3 {
 }
 
 .contact-form label span {
-  color: #d894a0;
+  color: var(--burnt-orange-highlight);
 }
 
 .contact-form textarea {
@@ -1188,7 +1196,7 @@ h3 {
 
 .cart-summary {
   padding: 1.5rem;
-  background: #151413;
+  background: var(--charcoal-deep);
 }
 
 .subtotal-row {
@@ -1434,7 +1442,7 @@ h3 {
   }
 
   .hero-shade {
-    background: linear-gradient(90deg, rgba(9, 9, 9, 0.8), rgba(9, 9, 9, 0.32)), linear-gradient(0deg, rgba(9, 9, 9, 0.35), transparent);
+    background: linear-gradient(90deg, rgba(28, 27, 26, 0.88), rgba(28, 27, 26, 0.38)), linear-gradient(0deg, rgba(28, 27, 26, 0.4), transparent);
   }
 
   .hero h1 {
