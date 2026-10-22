@@ -1,4 +1,4 @@
-// Replace these temporary remote URLs with approved local campaign images when available.
+// Temporary Unsplash photography for the demo. Replace these with your own product photos.
 export const IMAGES = {
   hero: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2200&q=90",
   about: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1300&q=85",

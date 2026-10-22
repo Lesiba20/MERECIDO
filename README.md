@@ -1,54 +1,40 @@
-# VVS DELUXE storefront prototype
+# MERECIDO storefront
 
-A responsive, front-end-only VVS DELUXE streetwear storefront built with HTML, CSS, vanilla JavaScript, and Vite. The catalogue, stock status, and prices are demonstration data. The cart is stored in the current browser for demo purposes; this site does not accept payment or submit orders.
+A responsive, front-end-only clothing storefront built with HTML, CSS, vanilla JavaScript, and Vite. Browse the sample collection, filter products, and use the browser-based demo cart. Product names, prices, and stock are demonstration data. Checkout, payments, orders, contact messages, and newsletter signups are not connected to real services.
 
-## Run locally
+## Run the site in VS Code
 
-1. Install a current Node.js LTS release.
-2. In this project folder, install the development dependency:
+1. Install a current [Node.js LTS release](https://nodejs.org/). npm is included with Node.js.
+2. In VS Code, open this project folder and choose **Terminal > New Terminal**.
+3. Install the project dependencies:
 
-   ```sh
+   ```powershell
    npm install
    ```
 
-3. Start the local development server:
+4. Start the development server:
 
-   ```sh
+   ```powershell
    npm run dev
    ```
 
-4. Open the local URL printed by Vite (usually `http://localhost:5173`).
+5. Hold **Ctrl** and click the local URL shown in the terminal (usually `http://localhost:5173`), or copy it into your browser.
+6. To stop the server, click in the terminal and press **Ctrl+C**.
 
-Create a production preview with `npm run build`, then `npm run preview`.
+To check the production build, run `npm run build`. To preview that build locally, run `npm run preview` and open the URL Vite prints.
+
+## Make it yours
+
+- **Brand text and page copy:** edit `src/main.js`.
+- **Products, prices, sizes, colours, and categories:** edit the `PRODUCTS` and `CATEGORIES` lists in `src/products.js`. Prices are in South African rand.
+- **Colours and typography:** edit the variables at the top of `src/style.css`.
+- **Product and campaign images:** change the URLs and alt text in `src/images.js`. The current photos are temporary Unsplash images; replace them with your own approved product photographs. You can put image files in a `public/images` folder and point the matching image entry to its file, for example `"/images/my-product.jpg"`.
+- **Browser cart:** the cart is saved in your browser's local storage for this demo.
+
+The main navigation, collection filters, mobile menu, product options, cart quantity controls, and remove buttons work locally. The contact form and newsletter form only show demo feedback; they do not send or save information.
 
 ## Deploy to Render
 
-This project is configured as a Render static site in `render.yaml`.
+The existing `render.yaml` describes a Render static site. Push this project to the GitHub repository you intend to deploy, then connect that repository in Render using **New > Blueprint**. Alternatively, create a static site with build command `npm install && npm run build` and publish directory `dist`.
 
-1. Push the project files to a GitHub repository that Render can access.
-2. In the Render Dashboard, choose **New > Blueprint** and connect that repository. Render will read `render.yaml` and build the static site.
-3. Alternatively, choose **New > Static Site** and use:
-   - **Build command:** `npm install && npm run build`
-   - **Publish directory:** `dist`
-   - **Start command:** leave blank (Render static sites do not use a start command)
-   - **Root directory:** leave blank when the project files are at the repository root
-4. When the deploy finishes, open the `onrender.com` URL shown in the service dashboard. Add a custom domain from the service settings if you have one.
-
-The app uses hash-based navigation (for example, `/#/shop`), so page views work on the static host without server-side routing rules. No environment variables or backend service are needed for this demo.
-
-Render can only deploy after these project files have been pushed to a Git repository that you can connect in Render.
-
-## Project files
-
-- `index.html` — document metadata, font loading, and the app mount point.
-- `src/main.js` — page rendering, navigation, catalogue controls, form demo states, and cart behavior.
-- `src/products.js` — editable demonstration product catalogue and category list.
-- `src/images.js` — centralized temporary remote image URLs and alt text for the lookbook.
-- `src/style.css` — design tokens, shared components, and responsive layouts.
-- `render.yaml` — Render static-site build and publish configuration.
-
-The site uses hash URLs for Home, Shop, Product details, About, Lookbook, Contact, Cart, and FAQ/policies. Change the product array in `src/products.js` to edit the sample catalogue. Replace the temporary image URLs in `src/images.js` with approved local campaign assets when available.
-
-## Before accepting real orders
-
-Connect a commerce service such as Shopify (for example, Shopify Storefront API plus Shopify-hosted checkout) or another supported commerce platform. Move authoritative inventory, prices, tax, shipping, order creation, and payment confirmation to that service; never treat this browser-only cart as proof of an order or payment. Also configure a real contact/newsletter provider, verified product and campaign imagery, business contact details, delivery and returns policies, privacy notices, and terms before launch. Keep any private credentials on a secure server, not in browser JavaScript.
+Before accepting real orders, connect a supported commerce platform and configure verified inventory, prices, shipping, taxes, policies, contact details, and payment handling. Never treat this browser-only cart as an order or payment.

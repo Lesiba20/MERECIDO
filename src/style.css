@@ -2,10 +2,10 @@
   color-scheme: dark;
   --obsidian: #090909;
   --off-white: #f5f3ef;
-  --burgundy: #722f3e;
-  --deep-blue: #254b75;
-  --concrete: #a7a39d;
-  --muted: #b7b4ae;
+  --burgundy: #793c37;
+  --deep-blue: #3f5148;
+  --concrete: #b9ad9e;
+  --muted: #c2beb7;
   --line: rgba(245, 243, 239, 0.2);
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -130,7 +130,7 @@ img {
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: -0.07em;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
@@ -562,6 +562,38 @@ h3 {
   padding-top: 1.15rem;
   font-size: 11px;
   white-space: nowrap;
+}
+
+.quick-add {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  padding: 0.7rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--off-white);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: left;
+  transition: color 180ms ease;
+}
+
+.quick-add:hover {
+  color: var(--concrete);
+}
+
+.quick-add:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.quick-add span {
+  font-size: 16px;
 }
 
 .brand-statement {

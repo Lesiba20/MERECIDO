@@ -1,7 +1,7 @@
 import { CATEGORIES, PRODUCTS } from "./products.js";
 import { IMAGES } from "./images.js";
 
-const CART_STORAGE_KEY = "vvs-deluxe-demo-cart";
+const CART_STORAGE_KEY = "merecido-demo-cart";
 const app = document.querySelector("#app");
 
 const state = {
@@ -78,9 +78,9 @@ function header() {
   ];
 
   return `
-    <div class="announcement">VVS DELUXE <span>—</span> STREETWEAR WITH INTENT.</div>
+    <div class="announcement">MERECIDO <span>—</span> WEAR WHAT YOU DESERVE.</div>
     <header class="site-header">
-      <a class="wordmark" href="#/" aria-label="VVS DELUXE home">VVS<span>DELUXE</span></a>
+      <a class="wordmark" href="#/" aria-label="MERECIDO home">MERECIDO</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
         <span class="menu-toggle-label">Menu</span><span class="menu-icon" aria-hidden="true"></span>
       </button>
@@ -106,8 +106,8 @@ function footer() {
     <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-brand">
-          <a class="wordmark" href="#/" aria-label="VVS DELUXE home">VVS<span>DELUXE</span></a>
-          <p>BUILT DIFFERENT.<br />WORN WITH INTENT.</p>
+          <a class="wordmark" href="#/" aria-label="MERECIDO home">MERECIDO</a>
+          <p>MADE TO BE YOURS.<br />WORN WITH INTENT.</p>
         </div>
         <div class="footer-column">
           <h2>Explore</h2>
@@ -135,7 +135,7 @@ function footer() {
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© ${new Date().getFullYear()} VVS DELUXE. DEMONSTRATION STOREFRONT.</span>
+        <span>© ${new Date().getFullYear()} MERECIDO. DEMONSTRATION STOREFRONT.</span>
         <span>MENLYN, PRETORIA · SOUTH AFRICA</span>
       </div>
     </footer>
@@ -156,6 +156,11 @@ function productCard(product) {
         </div>
         <span class="product-price">${money(product.price)}</span>
       </div>
+      ${
+        product.available
+          ? `<button class="quick-add" type="button" data-action="add-to-cart" data-product-id="${product.id}" data-size="${escapeAttribute(product.sizes[0])}" data-color="${escapeAttribute(product.colors[0])}" aria-label="Add ${product.name} in ${escapeAttribute(product.sizes[0])}, ${escapeAttribute(product.colors[0])} to your bag">ADD · ${escapeHtml(product.sizes[0])} / ${escapeHtml(product.colors[0])}<span aria-hidden="true">+</span></button>`
+          : '<button class="quick-add" type="button" disabled>COMING SOON</button>'
+      }
     </article>
   `;
 }
@@ -183,15 +188,15 @@ function homePage() {
         )}
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow hero-kicker">INDEPENDENT STREETWEAR · PRETORIA, ZA</p>
-          <h1><span class="hero-line hero-line-first">NOT MADE TO</span><span class="hero-line">BLEND IN.</span></h1>
-          <p class="hero-copy">Premium streetwear inspired by urban culture, individuality, and the energy of Gauteng.</p>
+          <p class="eyebrow hero-kicker">INDEPENDENT STYLE · SOUTH AFRICA</p>
+          <h1><span class="hero-line hero-line-first">MADE FOR</span><span class="hero-line">YOUR MOMENT.</span></h1>
+          <p class="hero-copy">Meet MERECIDO: considered everyday pieces for wherever life takes you. You deserve to feel good in what you wear.</p>
           <div class="hero-actions">
-            <a class="button button-light" href="#/shop">SHOP THE DROP <span aria-hidden="true">↗</span></a>
-            <a class="text-link text-link-light" href="#/about">DISCOVER THE BRAND <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" href="#/shop">SHOP NOW <span aria-hidden="true">↗</span></a>
+            <a class="text-link text-link-light" href="#/about">OUR STORY <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <span class="hero-index">01 — VVS DELUXE</span>
+        <span class="hero-index">01 — MERECIDO</span>
       </section>
 
       <section class="section category-section">
@@ -217,18 +222,18 @@ function homePage() {
 
       <section class="section featured-section">
         <div class="section-heading">
-          <div><p class="eyebrow">CURATED FOR THE CITY</p><h2>IN ROTATION.</h2></div>
+          <div><p class="eyebrow">A FEW FAVOURITES</p><h2>MADE TO MOVE.</h2></div>
           <a class="text-link" href="#/shop">SHOP THE COLLECTION <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="demo-note">Sample products and prices shown for demonstration purposes.</p>
+        <p class="demo-note">Sample products and prices shown for demonstration; product and campaign photography is temporary.</p>
         <div class="product-grid">${productGrid(featured)}</div>
       </section>
 
       <section class="brand-statement">
-        <p class="eyebrow">NO PERMISSION REQUIRED</p>
-        <h2>YOUR STYLE.<br /><span>YOUR RULES.</span></h2>
-        <a class="text-link text-link-light" href="#/about">GET TO KNOW VVS <span aria-hidden="true">↗</span></a>
-        <span class="statement-mark" aria-hidden="true">VVS</span>
+        <p class="eyebrow">A LITTLE REMINDER</p>
+        <h2>YOU DESERVE<br /><span>TO FEEL GOOD.</span></h2>
+        <a class="text-link text-link-light" href="#/about">GET TO KNOW US <span aria-hidden="true">↗</span></a>
+        <span class="statement-mark" aria-hidden="true">M.</span>
       </section>
 
       <section class="section lookbook-preview">
@@ -266,9 +271,9 @@ function shopPage() {
   return `
     <main id="main-content" class="page-shell">
       <section class="page-intro shop-intro">
-        <p class="eyebrow">VVS DELUXE / THE COLLECTION</p>
+        <p class="eyebrow">MERECIDO / THE COLLECTION</p>
         <h1>THE<br /><span>COLLECTION.</span></h1>
-        <p>Everyday essentials. Elevated streetwear. Explore the VVS DELUXE collection and find the pieces that speak your language.</p>
+        <p>Everyday essentials with a little more intention. Find the MERECIDO pieces that feel like you.</p>
       </section>
       <div class="shop-notice">DEMONSTRATION DATA — sample inventory, names, and prices only.</div>
       <section class="shop-section" aria-label="Shop products">
@@ -311,7 +316,7 @@ function productPage(id) {
       <section class="product-detail">
         <div class="product-detail-image">${image(product.image, product.alt)}</div>
         <div class="product-detail-info">
-          <p class="eyebrow">${product.category} / VVS DELUXE</p>
+          <p class="eyebrow">${product.category} / MERECIDO</p>
           <h1>${product.name}</h1>
           <p class="detail-price">${money(product.price)}</p>
           <p class="detail-description">${product.description}</p>
@@ -355,10 +360,10 @@ function aboutPage() {
           "Streetwear editorial portrait reflecting independent style"
         )}
         <div class="about-copy">
-          <p>VVS DELUXE is an independent streetwear concept inspired by urban culture, individual expression, and the energy of Gauteng.</p>
-          <p>Our vision is simple: bring together bold design, considered details, and everyday wearability. From oversized silhouettes to clean essentials, every piece should help you express who you are without saying a word.</p>
-          <p>We are building a brand that represents confidence, creativity, and a new perspective on everyday streetwear.</p>
-          <p class="about-signoff">VVS DELUXE.<br />BUILT DIFFERENT. WORN WITH INTENT.</p>
+          <p>MERECIDO means “deserved” — a reminder that you deserve clothes that feel as good as they look.</p>
+          <p>We are an independent South African clothing brand creating considered everyday pieces with confident silhouettes, easy comfort, and thoughtful details.</p>
+          <p>Our point of view is simple: get dressed for yourself, move at your own pace, and make room for the things you love.</p>
+          <p class="about-signoff">MERECIDO.<br />MADE TO BE YOURS. WORN WITH INTENT.</p>
         </div>
       </section>
     </main>
@@ -379,7 +384,7 @@ function lookbookPage() {
             ([photo, alt], index) => `
               <figure class="lookbook-frame lookbook-frame-${index + 1}">
                 ${image(photo, alt)}
-                <figcaption>VVS / FIELD NOTES — 0${index + 1}</figcaption>
+                <figcaption>MERECIDO / FIELD NOTES — 0${index + 1}</figcaption>
               </figure>
             `
           )
@@ -396,7 +401,7 @@ function contactPage() {
       <section class="page-intro">
         <p class="eyebrow">WE'RE LISTENING</p>
         <h1>LET'S<br /><span>TALK.</span></h1>
-        <p>Questions about a product, sizing, an order, or a potential collaboration? Get in touch with the VVS DELUXE team.</p>
+        <p>Questions about a product, sizing, or a collaboration? Leave a message for the MERECIDO team.</p>
       </section>
       <section class="contact-layout">
         <div class="contact-side-note">
@@ -503,7 +508,7 @@ function faqPage() {
       <section class="page-intro">
         <p class="eyebrow">THE DETAILS</p>
         <h1>GOOD TO<br /><span>KNOW.</span></h1>
-        <p>Helpful answers about this VVS DELUXE storefront prototype.</p>
+        <p>Helpful answers about this MERECIDO storefront prototype.</p>
       </section>
       <section class="faq-list" aria-label="Frequently asked questions">
         ${questions
@@ -592,13 +597,13 @@ function announce(message) {
   if (feedback) feedback.textContent = message;
 }
 
-function addToCart(productId) {
+function addToCart(productId, size = state.selectedSize, color = state.selectedColor) {
   const product = PRODUCTS.find((entry) => entry.id === productId);
   if (!product || !product.available) {
     announce("This demonstration item is not currently available.");
     return;
   }
-  if (!state.selectedSize || !state.selectedColor) {
+  if (!size || !color) {
     announce("Choose a size and colour before adding this item.");
     return;
   }
@@ -606,16 +611,16 @@ function addToCart(productId) {
   const existing = state.cart.find(
     (item) =>
       item.productId === productId &&
-      item.size === state.selectedSize &&
-      item.color === state.selectedColor
+      item.size === size &&
+      item.color === color
   );
 
   if (existing) existing.quantity += 1;
   else {
     state.cart.push({
       productId,
-      size: state.selectedSize,
-      color: state.selectedColor,
+      size,
+      color,
       quantity: 1
     });
   }
@@ -666,7 +671,9 @@ document.addEventListener("click", (event) => {
 
   const button = event.target.closest("[data-action]");
   if (button) {
-    if (button.dataset.action === "add-to-cart") addToCart(button.dataset.productId);
+    if (button.dataset.action === "add-to-cart") {
+      addToCart(button.dataset.productId, button.dataset.size, button.dataset.color);
+    }
     if (button.dataset.action === "increase") changeCartItem(button, 1);
     if (button.dataset.action === "decrease") changeCartItem(button, -1);
     if (button.dataset.action === "remove") changeCartItem(button, "remove");
