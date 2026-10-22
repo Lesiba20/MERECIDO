@@ -196,7 +196,8 @@ function homePage() {
             <a class="text-link text-link-light" href="#/about">OUR STORY <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <span class="hero-index">01 — MERECIDO</span>
+        <span class="hero-frame-label" aria-hidden="true">FIELD NOTES / 01 · PRETORIA, ZA</span>
+        <span class="hero-index">MERECIDO — EDITION 01</span>
       </section>
 
       <section class="section category-section">
@@ -238,7 +239,7 @@ function homePage() {
 
       <section class="section lookbook-preview">
         <div class="section-heading">
-          <div><p class="eyebrow">OUTSIDE THE ORDINARY</p><h2>FRAME OF MIND.</h2></div>
+          <div><p class="eyebrow">THE MERECIDO IMAGE EDIT / 01</p><h2>FRAME OF MIND.</h2></div>
           <a class="text-link" href="#/lookbook">ENTER THE LOOKBOOK <span aria-hidden="true">↗</span></a>
         </div>
         <div class="lookbook-teaser">
