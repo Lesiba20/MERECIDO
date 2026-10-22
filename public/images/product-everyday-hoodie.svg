@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Everyday Hoodie — MERECIDO</title><desc id="desc">Original studio-style vector illustration of a burgundy relaxed-fit hoodie on a charcoal background.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#393735"/><stop offset="1" stop-color="#1c1b1a"/></linearGradient><linearGradient id="cloth" x2="1" y2="1"><stop stop-color="#8a324a"/><stop offset="1" stop-color="#572237"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="19"/></filter></defs>
+  <path fill="url(#bg)" d="M0 0h800v1000H0z"/><circle cx="613" cy="214" r="150" fill="#80601c" opacity=".34"/><path fill="#d8b25e" opacity=".25" d="M0 710h800v290H0z"/><ellipse cx="408" cy="864" rx="243" ry="35" fill="#000" opacity=".42" filter="url(#shadow)"/>
+  <path fill="#76263c" d="M286 215c-72 6-125 48-160 119l-82 233 125 53 67-128v381h337V492l66 128 125-53-83-233c-35-71-88-113-160-119l-80 48z"/>
+  <path fill="url(#cloth)" stroke="#b65c68" stroke-width="5" d="M286 215c-72 6-125 48-160 119l-82 233 125 53 67-128v381h337V492l66 128 125-53-83-233c-35-71-88-113-160-119l-80 48z"/>
+  <path fill="#572237" stroke="#b65c68" stroke-width="5" d="M298 211c12-81 52-128 102-128s90 47 102 128l-102 70z"/>
+  <path fill="none" stroke="#d9a3a0" stroke-width="8" d="m374 274-9 110m48-110 8 110"/>
+  <path fill="#572237" stroke="#b65c68" stroke-width="5" d="M283 678h235v96H283z"/><path fill="#d8b25e" d="M375 485h40v8h-40z"/>
+  <path fill="none" stroke="#e6bec1" stroke-opacity=".38" stroke-width="4" d="M285 244 225 590m294-345 56 344M153 394l83 35M646 394l-83 35"/>
+  <circle cx="680" cy="778" r="53" fill="#183e32"/><text x="680" y="790" text-anchor="middle" fill="#f5f3ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">M.</text>
+</svg>

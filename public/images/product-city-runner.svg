@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">City Runner — MERECIDO</title><desc id="desc">Original side-view vector illustration of an off-white sneaker with burgundy and burnt-orange detailing.</desc>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#393735"/><stop offset="1" stop-color="#183e32"/></linearGradient><linearGradient id="shoe" x2="0" y2="1"><stop stop-color="#faf5e9"/><stop offset="1" stop-color="#beb39f"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v1000H0z"/><path fill="#80601c" opacity=".52" d="M0 185h800v5H0zm0 26h800v2H0zm0 643h800v5H0zm0 27h800v2H0z"/><circle cx="610" cy="347" r="148" fill="#a84326" opacity=".55"/>
+  <path fill="#1c1b1a" opacity=".44" d="M80 777h654v61H80z"/>
+  <path fill="url(#shoe)" stroke="#f5f3ef" stroke-width="7" d="M126 620c76-11 144-79 193-220l86 37c48 21 93 61 130 113l82 88 111 36c49 16 74 50 64 86-8 33-34 49-81 49H170c-67 0-109-25-108-75 0-43 23-81 64-114z"/>
+  <path fill="#76263c" d="m337 398 71 31-90 178-60-29zm87 39 55 30-109 177-50-24z"/>
+  <path fill="#a84326" d="m169 617 85 33-28 42-112-32zm361-21 82 84-39 41-95-101z"/>
+  <path fill="none" stroke="#80601c" stroke-width="13" d="m340 469 95 36m-116 0 99 38m-122 0 100 39m-128-3 91 37"/>
+  <path fill="#f5f3ef" d="M108 737h641c36 0 57 14 57 34s-24 32-66 32H142c-56 0-81-10-81-31 0-19 16-31 47-35z"/><path fill="#183e32" d="M182 811h536v11H182z"/>
+  <path fill="#d8b25e" d="M90 885h620v3H90z"/><text x="400" y="934" text-anchor="middle" fill="#f5f3ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="8">CITY / EVERYDAY</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">MERECIDO campaign — City in a new light</title>
+  <desc id="desc">Original fashion illustration of a figure against a warm, abstract city skyline.</desc>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#46564a"/><stop offset=".52" stop-color="#927047"/><stop offset="1" stop-color="#76263c"/></linearGradient>
+    <linearGradient id="coat" x2="0" y2="1"><stop stop-color="#d2b779"/><stop offset="1" stop-color="#80601c"/></linearGradient>
+    <linearGradient id="shade" x2="0" y2="1"><stop stop-color="#1c1b1a" stop-opacity="0"/><stop offset="1" stop-color="#1c1b1a" stop-opacity=".66"/></linearGradient>
+    <pattern id="grain" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r="1" fill="#fff" opacity=".18"/><circle cx="64" cy="51" r=".8" fill="#fff" opacity=".16"/><circle cx="31" cy="79" r=".7" fill="#1c1b1a" opacity=".2"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v1000H0z"/>
+  <circle cx="1210" cy="225" r="154" fill="#d8b25e" opacity=".84"/>
+  <path fill="#183e32" opacity=".76" d="M0 388h220V156h180v311h105V258h174v236h125V112h206v352h105V200h196v300h289v500H0z"/>
+  <path fill="#292826" opacity=".6" d="M0 586h245V362h162v271h126V420h186v220h95V330h195v298h133V400h176v226h282v374H0z"/>
+  <path fill="#d8b25e" opacity=".42" d="M80 420h14v44H80zm72 0h14v44h-14zm151-169h14v48h-14zm82 0h14v48h-14zm140 277h14v43h-14zm70 0h14v43h-14zm171-125h14v42h-14zm68 0h14v42h-14zm158 103h14v43h-14zm78-185h14v44h-14zm132 0h14v44h-14z"/>
+  <path fill="#b9ad9e" opacity=".55" d="M0 760h1600v240H0z"/>
+  <ellipse cx="797" cy="880" rx="231" ry="37" fill="#1c1b1a" opacity=".42"/>
+  <path fill="#292826" d="M736 335c0-91 54-151 125-151s125 60 125 151l-32 68H768z"/>
+  <path fill="#b87950" d="M770 282c0-72 38-114 91-114 58 0 93 43 93 114v69c0 70-38 116-93 116-53 0-91-46-91-116z"/>
+  <path fill="#292826" d="M757 286c15-106 83-153 157-119 35 16 57 48 64 97-37-16-54-46-59-70-45 39-96 67-162 76z"/>
+  <path fill="#183e32" d="m749 408 110 44 104-47 97 78-64 328H666l-58-326z"/>
+  <path fill="url(#coat)" d="m734 423 125 33 113-38 84 66-51 371H644l-38-357z"/>
+  <path fill="#76263c" d="m759 443 97 23-70 389h-76zm130 25 82-35 93 57-61 365h-70z"/>
+  <path fill="#d8b25e" d="m852 460 42 8-57 383h-35z"/>
+  <path fill="#80601c" d="m641 469-101 113 28 57 101-77zm407-4 106 96-23 69-100-70z"/>
+  <path fill="#292826" d="M719 833h149l-13 48H713zm177 0h141l20 48H894z"/>
+  <path fill="url(#shade)" d="M0 0h1600v1000H0z"/>
+  <path fill="url(#grain)" d="M0 0h1600v1000H0z"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Soft Touch Hoodie — MERECIDO</title><desc id="desc">Original vector illustration of a deep green relaxed hoodie on a burgundy editorial backdrop.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#76263c"/><stop offset="1" stop-color="#393735"/></linearGradient><linearGradient id="cloth" x2="1" y2="1"><stop stop-color="#35634d"/><stop offset="1" stop-color="#183e32"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v1000H0z"/><path fill="#d8b25e" opacity=".5" d="M0 110h800v5H0zm0 24h800v2H0z"/><circle cx="184" cy="253" r="122" fill="#a84326" opacity=".57"/><ellipse cx="405" cy="868" rx="251" ry="33" fill="#1c1b1a" opacity=".43"/>
+  <path fill="url(#cloth)" stroke="#73907a" stroke-width="5" d="M288 224c-67 13-116 49-148 111L58 544l127 59 77-130v326h282V473l77 130 121-59-80-209c-32-62-81-98-148-111l-112 54z"/>
+  <path fill="#183e32" stroke="#73907a" stroke-width="5" d="M290 225c10-79 50-126 112-126s102 47 112 126l-112 68z"/>
+  <path fill="none" stroke="#d8b25e" stroke-width="7" d="m367 282-6 113m48-113 6 113"/>
+  <path fill="#24503e" stroke="#73907a" stroke-width="4" d="M278 690h285v85H278z"/>
+  <path fill="none" stroke="#7fa18b" stroke-width="4" d="M287 266 229 602m288-336 57 336M158 419l83 37m402-37-83 37"/>
+  <circle cx="400" cy="535" r="37" fill="#d8b25e"/><text x="400" y="545" text-anchor="middle" fill="#183e32" font-family="Arial,sans-serif" font-size="22" font-weight="bold" letter-spacing="4">M</text>
+  <path fill="#292826" d="M314 835h122v43H302zm131 0h113l30 43H442z"/>
+</svg>

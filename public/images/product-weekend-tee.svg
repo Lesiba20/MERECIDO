@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Weekend Tee — MERECIDO</title><desc id="desc">Original vector illustration of a burgundy graphic tee with a gold sun motif.</desc>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#80601c"/><stop offset="1" stop-color="#76263c"/></linearGradient><linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#903c4e"/><stop offset="1" stop-color="#572237"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v1000H0z"/><circle cx="608" cy="219" r="165" fill="#d8b25e" opacity=".78"/><path fill="#183e32" opacity=".73" d="M0 745h800v255H0z"/><ellipse cx="398" cy="866" rx="247" ry="34" fill="#1c1b1a" opacity=".4"/>
+  <path fill="url(#shirt)" stroke="#d08988" stroke-width="5" d="M302 198c-54 8-97 38-128 86L66 487l126 83 81-98v300h258V472l82 98 121-83-108-203c-30-48-74-78-128-86l-98 77z"/>
+  <path fill="#76263c" stroke="#d08988" stroke-width="5" d="M302 198c7 70 38 111 97 111s90-41 97-111l-97 77z"/>
+  <circle cx="399" cy="535" r="103" fill="#d8b25e"/><circle cx="399" cy="535" r="68" fill="#a84326"/><path fill="#183e32" d="M386 457h26v157h-26zm-66 65h158v25H320z"/>
+  <path fill="#f5f3ef" d="m346 546 33 32 72-87 16 14-86 104-49-48z"/>
+  <path fill="#292826" d="M312 835h122v43H300zm133 0h112l28 43H441z"/>
+  <text x="400" y="710" text-anchor="middle" fill="#f5f3ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="6">TAKE YOUR TIME</text>
+</svg>
