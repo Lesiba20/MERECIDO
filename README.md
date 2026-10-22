@@ -35,6 +35,15 @@ The main navigation, collection filters, mobile menu, product options, cart quan
 
 ## Deploy to Render
 
-The existing `render.yaml` describes a Render static site. Push this project to the GitHub repository you intend to deploy, then connect that repository in Render using **New > Blueprint**. Alternatively, create a static site with build command `npm install && npm run build` and publish directory `dist`.
+The root `render.yaml` configures a static site called `merecido`, built from the `main` branch. Render installs the existing npm dependencies, runs the Vite production build, and publishes the generated `dist` folder. Automatic deploys are enabled.
+
+To connect it to Render:
+
+1. Sign in to the [Render Dashboard](https://dashboard.render.com/).
+2. Choose **New +** → **Blueprint**.
+3. Connect the GitHub account that can access `Lesiba20/MERECIDO`, and select the `MERECIDO` repository.
+4. Select the `main` branch and confirm the Blueprint. Render will read `render.yaml`, build the storefront, and show the published URL when the deploy finishes.
+
+If you already have a Render account but cannot select the repository, first grant Render access to `Lesiba20/MERECIDO` in your GitHub application's repository-access settings. This deployment needs no API keys or secret environment variables.
 
 Before accepting real orders, connect a supported commerce platform and configure verified inventory, prices, shipping, taxes, policies, contact details, and payment handling. Never treat this browser-only cart as an order or payment.
